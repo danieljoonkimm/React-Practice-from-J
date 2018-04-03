@@ -25,7 +25,7 @@ export default class App extends Component {
         } else {
             this.state.todos.push(this.state.toDoItem);
             this.setState({toDoItem:''})
-
+            document.getElementsByName('toDoItem')[0].value = '';
         }
     }
 
@@ -51,6 +51,11 @@ export default class App extends Component {
         )
     }
 }
+
+
+//TODO: make a button to replace todolist component
+
+
 
 // within the render method
     // return a single div containing the child components
